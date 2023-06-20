@@ -1,0 +1,27 @@
+{
+  "name": "linkding-archiver",
+  "version": "0.1.0",
+  "description": "Check linkding bookmarks and save MHTML/PDF snapshots to archive",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "run": "tsc && node dist/index.js",
+    "lint": "npx eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "author": "pettijohn",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "puppeteer-core": "^20.7.2",
+    "typescript": "^5.1.3"
+  }
+}
