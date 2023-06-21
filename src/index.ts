@@ -40,7 +40,7 @@ async function captureArchive(page: Page, session: CDPSession, url: string) {
   // https://github.com/puppeteer/puppeteer/issues/3575#issuecomment-447258318
   // https://vanilla.aslushnikov.com/?Page.captureSnapshot
   const { data } = await session.send('Page.captureSnapshot');  
-  fs.writeFileSync(`${normalizeUrlToFilename(url)}.mht`, data);
+  fs.writeFileSync(`${parsedUrl.hostname}.mht`, data);
 }
 
 /**
